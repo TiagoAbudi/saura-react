@@ -14,7 +14,6 @@ import jwt_decode from "jwt-decode";
 import "./Login.css";
 import { toast } from "react-toastify";
 import { history } from "../../history";
-import DialogAlertItensFiliais from "../../components/DialogAlertItensFiliais";
 
 const useStyles = makeStyles(() => ({
   divCampos: {
@@ -214,18 +213,6 @@ const Login = () => {
           </div>
         </form>
 
-        <DialogAlertItensFiliais
-          titulo="Filiais"
-          mostrar={openDialog}
-          mensagem="Escolha a filial que deseja fazer o login"
-          textoNao="Fechar"
-          callbackNao={() => fecharDialogs()}
-          colunas={colunas}
-          altura="350px"
-          largura="500px"
-          linhas={filiais}
-          onRowClick={(params) => selecionaFilial(params)}
-        />
       </Container>
     </div>
   );

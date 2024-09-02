@@ -1,18 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Box, Typography } from "@mui/material";
-import { CircularProgress } from "@mui/material";
-import TodayIcon from "@mui/icons-material/Today";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import GroupsIcon from "@mui/icons-material/Groups";
-import PercentIcon from "@mui/icons-material/Percent";
-import { toast } from "react-toastify";
 import NumberFormat from "../util/NumberFormat";
 import Header from "./Header";
 import StatBox from "./StatBox";
 import LineChart from "./LineChart";
-import PieChart from "./PieChart";
 import BarChart from "./BarChart";
-import GoalsChart from "./GoalsChart";
 
 const DashboardPadrao = (props) => {
   const [carregandoPedidos, setCarregandoPedidos] = useState(false);

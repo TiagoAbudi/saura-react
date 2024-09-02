@@ -8,26 +8,26 @@ import IconButton from "@mui/material/IconButton";
 
 const CssTextField = styled(TextField)({
   "& label": {
-    color: "white",
-    fontSize: '20px',
-    fontWeight: '300px',
+    color: "#acc3d4",
+    fontSize: "20px",
+    fontWeight: "300px",
   },
   "& label.Mui-focused": {
-    color: "white",
-    fontSize: '20px',
-    fontWeight: '600px'
+    color: "#acc3d4",
+    fontSize: "20px",
+    fontWeight: "600px",
   },
   "& .MuiOutlinedInput-root": {
     marginBottom: "10px",
     borderRadius: 30,
-    color: "white",
-    fontWeight: '600px',
+    color: "#acc3d4",
+    fontWeight: "600px",
     "&:hover fieldset": {
       boxShadow: "0 4px 4px rgba(0, 0, 0, .5)",
     },
     "&.Mui-focused fieldset": {
       boxShadow: "0 4px 4px rgba(0, 0, 0, .5)",
-    }
+    },
   },
 });
 
@@ -59,7 +59,7 @@ const CampoSenhaLogin = (props) => {
             </IconButton>
           </InputAdornment>
         ),
-        "data-cy": props.dataCy
+        "data-cy": props.dataCy,
       }}
     />
   );

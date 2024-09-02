@@ -4,20 +4,20 @@ import { styled } from "@mui/styles";
 
 const CssTextField = styled(TextField)({
   "& label": {
-    color: "white",
+    color: "#acc3d4",
     fontSize: "20px",
     fontWeight: "300px",
     //transform: "translate(14px, 20px) scale(1)",
   },
   "& label.Mui-focused": {
-    color: "white",
+    color: "#acc3d4",
     fontSize: "20px",
     fontWeight: "600px",
   },
   "& .MuiOutlinedInput-root": {
     marginBottom: "10px",
     borderRadius: 30,
-    color: "white",
+    color: "#acc3d4",
     fontWeight: "600px",
     "&:hover fieldset": {
       boxShadow: "0 4px 4px rgba(0, 0, 0, .5)",

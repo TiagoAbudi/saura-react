@@ -117,19 +117,16 @@ const Login = () => {
         localStorage.removeItem("app-token");
         localStorage.removeItem("refresh-token");
         if (error && error.data) {
-          toast.error(
-            `${error.data.message ? error.data.message : error}`,
-            {
-              theme: "colored",
-            }
-          );
+          toast.error(`${error.data.message ? error.data.message : error}`, {
+            theme: "colored",
+          });
         } else {
           toast.error(`${error}`, {
             theme: "colored",
           });
         }
       });
-  }
+  };
 
   return (
     <div className={classes.divCampos}>
@@ -195,7 +192,7 @@ const Login = () => {
                 disabled={btnDisabled}
                 sx={{
                   backgroundColor: colors.blueAccent[700],
-                  color: colors.grey[100],
+                  color: colors.grey[400],
                   fontSize: "14px",
                   fontWeight: "bold",
                   padding: "10px 20px",
@@ -212,7 +209,6 @@ const Login = () => {
             </Box>
           </div>
         </form>
-
       </Container>
     </div>
   );
